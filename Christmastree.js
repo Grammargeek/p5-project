@@ -38,9 +38,11 @@ function setup() {
     //sets color for tree
     var c = color('green');
     fill(c);
+      var tri3 = triangle(460, 370, 650, 200, 830, 370);
+          var tri2 = triangle(460, 310, 650, 190, 820, 310);
     var tri = triangle(478, 250, 650, 130, 800, 250);
-    var tri2 = triangle(460, 310, 650, 190, 820, 310);
-    var tri3 = triangle(460, 370, 650, 200, 830, 370);
+
+  
 
     //Changes color for first segment
     button4.addEventListener("click", function() {
@@ -49,8 +51,7 @@ function setup() {
         var tri = triangle(478, 250, 650, 130, 800, 250);
     });
 
-    var tri3 = triangle(460, 370, 650, 200, 830, 370);
-    var tri2 = triangle(460, 310, 650, 190, 820, 310);
+   
 
     //changes color and draws middle section of the tree. 
     button2.addEventListener("click", function() {
@@ -60,7 +61,7 @@ function setup() {
         var tri2 = triangle(460, 310, 650, 190, 820, 310);
         // var tri= triangle(478, 250, 650, 130, 800, 250);
     });
-    //Used to draw and change color of the stump. 
+   // Used to draw and change color of the stump. 
     button5.addEventListener("click", function() {
         var thirdColor = color(input5.value);
         fill(thirdColor);
@@ -69,7 +70,7 @@ function setup() {
     //sets topper color
     var topperColor = color("silver");
     fill(topperColor);
-    //creates topper
+    // //creates topper
     var topper = ellipse(650, 120, 40, 40);
     button6.addEventListener("click", function() {
         var diffColor = color(input6.value);
