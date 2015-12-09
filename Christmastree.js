@@ -19,6 +19,10 @@ var input5 = document.getElementById("input5");
 //button6/input6 are used to change the color of the topper.
 var button6 = document.getElementById("button6");
 var input6 = document.getElementById("input6");
+// var dropdown = document.getElementById("dropdown");
+//this is used for the topper images
+
+var button7 = document.getElementById("button7");
 
 function setup() {
     createCanvas(1300, 700);
@@ -82,8 +86,15 @@ function setup() {
 button1.addEventListener("click", function() {
     var newColor = input1.value;
     theParagraph.style.color = newColor;
-});
-
-function draw(){
     
-}
+    
+});
+//function for star image
+    button7.addEventListener("click", function(){
+        var starTopper = loadImage("startopper.png");
+        topper = createSprite(30,30);
+        topper.addImage(starTopper);
+        // topper.style = starTopper;
+    });
+
+
