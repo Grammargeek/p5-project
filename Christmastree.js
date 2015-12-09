@@ -71,11 +71,11 @@ function setup() {
     var topperColor = color("silver");
     fill(topperColor);
     // //creates topper
-    var topper = ellipse(650, 120, 40, 40);
+    var topper = ellipse(650, 120, 50, 50);
     button6.addEventListener("click", function() {
         var diffColor = color(input6.value);
         fill(diffColor);
-        var topper = ellipse(650, 120, 40, 40);
+        var topper = ellipse(650, 120, 50, 50);
     });
 }
 //changes color of the paragraph text.
