@@ -96,8 +96,9 @@ button1.addEventListener("click", function() {
         var hasStar = true;
         if(hasStar === true){
             var starTopper = loadImage("startopper.png");
-            imageSprite = createSprite(300, 400);
+            imageSprite = createSprite(650, 120);
             imageSprite.addImage(starTopper);
+            drawSprites();
             
         }
         
