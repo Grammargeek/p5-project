@@ -21,6 +21,7 @@ var button6 = document.getElementById("button6");
 var input6 = document.getElementById("input6");
 // var dropdown = document.getElementById("dropdown");
 //this is used for the topper images
+var hasStar = false;
 
 var button7 = document.getElementById("button7");
 
@@ -40,6 +41,7 @@ function setup() {
     });
 
     //sets color for tree
+
     var c = color('green');
     fill(c);
       var tri3 = triangle(460, 370, 650, 200, 830, 370);
@@ -81,7 +83,7 @@ function setup() {
         fill(diffColor);
         var topper = ellipse(650, 120, 50, 50);
     });
-}
+
 //changes color of the paragraph text.
 button1.addEventListener("click", function() {
     var newColor = input1.value;
@@ -91,10 +93,20 @@ button1.addEventListener("click", function() {
 });
 //function for star image
     button7.addEventListener("click", function(){
-        var starTopper = loadImage("startopper.png");
-        topper = createSprite(30,30);
-        topper.addImage(starTopper);
-        // topper.style = starTopper;
+        var hasStar = true;
+        if(hasStar === true){
+            var starTopper = loadImage("startopper.png");
+            topper = createSprite(300, 400);
+            toppper.addImage(starTopper);
+            
+        }
+        
     });
-
-
+    
+//don't put anything below this line, it won't work. 
+}
+//end of "function setup", you're on your own. 
+//Turn back mortal.
+//Are you sure you want to be down here?
+//You're in the boondocks. 
+//Really? You're still here? 
