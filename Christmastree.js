@@ -96,17 +96,22 @@ button1.addEventListener("click", function() {
         var hasStar = true;
         if(hasStar === true){
             var starTopper = loadImage("startopper.png");
-            topper = createSprite(300, 400);
-            toppper.addImage(starTopper);
+            imageSprite = createSprite(300, 400);
+            imageSprite.addImage(starTopper);
             
         }
         
     });
     
-//don't put anything below this line, it won't work. 
+//You are nearing the end of "function setup".     
+//don't put anything below this line, it won't work.
 }
 //end of "function setup", you're on your own. 
 //Turn back mortal.
 //Are you sure you want to be down here?
-//You're in the boondocks. 
+//You're in the boondocks now. 
 //Really? You're still here? 
+//Go back.
+//Leave now. 
+//It's dangerous here.
+//I tried to warn you. 
