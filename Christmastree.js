@@ -24,8 +24,15 @@ var input6 = document.getElementById("input6");
 var hasStar = false;
 
 var button7 = document.getElementById("button7");
+//2nd star
+var button8 = document.getElementById("button8");
+var hasBlueStar = false;
+//The vars below are used for the sheep topper 
+var button9 = document.getElementById("button9");
+var hasSheep = false;
 
 function setup() {
+    //creates canvas
     createCanvas(1300, 700);
 
     //sets brown for stump
@@ -77,11 +84,11 @@ function setup() {
     var topperColor = color("silver");
     fill(topperColor);
     // //creates topper
-    var topper = ellipse(650, 120, 50, 50);
+    var topper = ellipse(650, 120, 40, 40);
     button6.addEventListener("click", function() {
         var diffColor = color(input6.value);
         fill(diffColor);
-        var topper = ellipse(650, 120, 50, 50);
+        var topper = ellipse(650, 120, 40, 40);
     });
 
 //changes color of the paragraph text.
@@ -102,8 +109,33 @@ button1.addEventListener("click", function() {
             
         }
         
+        
+        
     });
     
+    //used for second star.
+    button8.addEventListener("click", function(){
+            var hasBlueStar = true;
+            if(hasBlueStar === true){
+                var blueStarTopper = loadImage("star2.png");
+                imageSprite = createSprite(650, 120);
+                imageSprite.addImage(blueStarTopper);
+                drawSprites();
+            }
+            
+        });
+        
+        //Used to create the sheep topper.
+        button9.addEventListener("click", function(){
+            var hasSheep = true;
+            if(hasSheep === true){
+                var sheepTopper = loadImage("sheep.png");
+                imageSprite = createSprite(650, 120);
+                imageSprite.addImage(sheepTopper);
+                drawSprites();
+            }
+        });
+        
 //You are nearing the end of "function setup".     
 //don't put anything below this line, it won't work.
 }
