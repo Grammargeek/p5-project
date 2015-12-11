@@ -159,10 +159,12 @@ button1.addEventListener("click", function() {
             }
         });
     
-
-
+function draw(){
+    
+}
         
-//You are nearing the end of "function setup".     
+//You are nearing the end of "function setup".
+//Why are you down so far? 
 //don't put anything below this line, it won't work.
 }
 //end of "function setup", you're on your own. 
