@@ -135,6 +135,8 @@ button1.addEventListener("click", function() {
                 drawSprites();
             }
         });
+
+
         
 //You are nearing the end of "function setup".     
 //don't put anything below this line, it won't work.
@@ -145,6 +147,14 @@ button1.addEventListener("click", function() {
 //You're in the boondocks now. 
 //Really? You're still here? 
 //Go back.
+//Why are you not turning back?
 //Leave now. 
 //It's dangerous here.
 //I tried to warn you. 
+//You have 3 seconds to turn away and run.
+//3
+//2
+//1
+//BOOOOOOOM!
+
+
