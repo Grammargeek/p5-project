@@ -30,6 +30,9 @@ var hasBlueStar = false;
 //The vars below are used for the sheep topper 
 var button9 = document.getElementById("button9");
 var hasSheep = false;
+//ornaments
+var button10 = document.getElementById("button10");
+var hasOrnaments = false;
 
 function setup() {
     //creates canvas
@@ -135,6 +138,27 @@ button1.addEventListener("click", function() {
                 drawSprites();
             }
         });
+        
+        //Ornaments
+        button10.addEventListener("click", function(){
+            var hasOrnaments = true;
+            if(hasOrnaments === true){
+              
+                var ornament = loadImage("xmas-ball-ornament.png");
+                imageSprite = createSprite(630, 200);
+                 imageSprite.addImage(ornament);
+                imageSprite = createSprite(670, 250);
+                 imageSprite.addImage(ornament);
+                imageSprite = createSprite(550, 220);
+                imageSprite.addImage(ornament);
+                imageSprite = createSprite(750, 320);
+                imageSprite.addImage(ornament);
+                imageSprite = createSprite(580, 320);
+                imageSprite.addImage(ornament);
+                drawSprites();
+            }
+        });
+    
 
 
         
