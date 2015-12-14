@@ -30,9 +30,12 @@ var hasBlueStar = false;
 //The vars below are used for the sheep topper 
 var button9 = document.getElementById("button9");
 var hasSheep = false;
-//ornaments
+//ornaments 1
 var button10 = document.getElementById("button10");
 var hasOrnaments = false;
+//ornaments 2
+var button11 = document.getElementById("button11");
+var hasOtherOrnaments = false;
 
 function setup() {
     //creates canvas
@@ -62,6 +65,7 @@ function setup() {
 
     //Changes color for first segment
     button4.addEventListener("click", function() {
+        var color1 = true;
         var firstColor = color(input4.value);
         fill(firstColor);
         var tri = triangle(478, 250, 650, 130, 800, 250);
@@ -158,9 +162,29 @@ button1.addEventListener("click", function() {
                 drawSprites();
             }
         });
+        
+        button11.addEventListener("click", function(){
+            var hasOtherOrnaments = true;
+            if(hasOtherOrnaments === true){
+              
+                var ornament = loadImage("sheep.1.png");
+                imageSprite = createSprite(630, 200);
+                 imageSprite.addImage(ornament);
+                imageSprite = createSprite(670, 250);
+                 imageSprite.addImage(ornament);
+                imageSprite = createSprite(550, 220);
+                imageSprite.addImage(ornament);
+                imageSprite = createSprite(750, 320);
+                imageSprite.addImage(ornament);
+                imageSprite = createSprite(580, 320);
+                imageSprite.addImage(ornament);
+                drawSprites();
+            }
+        });
+        
     
 function draw(){
-    
+   
 }
         
 //You are nearing the end of "function setup".
