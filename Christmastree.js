@@ -20,8 +20,8 @@ var input5 = document.getElementById("input5");
 var button6 = document.getElementById("button6");
 var input6 = document.getElementById("input6");
 // var dropdown = document.getElementById("dropdown");
-//this is used for the topper images
-var hasStar = false;
+//this is used for the topper images 
+var hasStar = false;   
 
 var button7 = document.getElementById("button7");
 //2nd star
