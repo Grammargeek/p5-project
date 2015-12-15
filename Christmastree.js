@@ -36,6 +36,9 @@ var hasOrnaments = false;
 //ornaments 2
 var button11 = document.getElementById("button11");
 var hasOtherOrnaments = false;
+//presents
+var button12 = document.getElementById("button12");
+var hasPresents = false; 
 
 function setup() {
     //creates canvas
@@ -77,9 +80,8 @@ function setup() {
     button2.addEventListener("click", function() {
         var c = color(input2.value);
         fill(c);
-        // var tri3 = triangle(460, 370, 650, 200, 830, 370);
         var tri2 = triangle(460, 310, 650, 190, 820, 310);
-        // var tri= triangle(478, 250, 650, 130, 800, 250);
+
     });
    // Used to draw and change color of the stump. 
     button5.addEventListener("click", function() {
@@ -182,9 +184,20 @@ button1.addEventListener("click", function() {
             }
         });
         
+        //presents
+        button12.addEventListener("click", function(){
+            var hasPresents = true; 
+            if(hasPresents === true){
+                var presents = loadImage("present.png");
+                imageSprite = createSprite(570, 420);
+                imageSprite.addImage(presents);
+                drawSprites();
+            }
+        }
+        )
     
 function draw(){
-   
+            
 }
         
 //You are nearing the end of "function setup".
