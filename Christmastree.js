@@ -54,9 +54,9 @@ function setup() {
 
     //changes color of stump
     button3.addEventListener("click", function() {
-        var cc = color(input3.value);
-        fill(cc);
-        var stump = rect(615, 369, 70, 70);
+        // var cc = color(input3.value);
+        // fill(cc);
+        // var stump = rect(615, 369, 70, 70);
     });
 
     //sets color for tree
@@ -98,9 +98,9 @@ function setup() {
     // // //creates topper
     // var topper = ellipse(650, 120, 40, 40);
     button6.addEventListener("click", function() {
-        var diffColor = color(input6.value);
-        fill(diffColor);
-        var topper = ellipse(650, 120, 40, 40);
+        // var diffColor = color(input6.value);
+        // fill(diffColor);
+        // var topper = ellipse(650, 120, 40, 40);
     });
 
 //changes color of the paragraph text.
@@ -210,6 +210,9 @@ function draw(){
      var colors = color('brown');
     fill(colors);
     var stump = rect(615, 360, 70, 70);
+     var cc = color(input3.value);
+        fill(cc);
+        var stump = rect(615, 369, 70, 70);
     //draws tree 
      var c = color('green');
     fill(c);
@@ -231,6 +234,9 @@ function draw(){
     fill(topperColor);
     // //creates topper
     var topper = ellipse(650, 120, 40, 40);
+     var diffColor = color(input6.value);
+        fill(diffColor);
+        var topper = ellipse(650, 120, 40, 40);
 
 
     //yellow star
