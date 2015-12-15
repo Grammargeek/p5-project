@@ -210,9 +210,9 @@ function setup() {
 
 
 
-//Welcome to function draw, you're on the outside. 
+//Welcome to function draw 
 function draw() {
-    background(51);
+    background(13);
 
     //stump
     var colors = color('brown');
@@ -310,3 +310,6 @@ function draw() {
     }
 
 }
+
+//You have reached the end of function draw
+//Make sure that you want to put your code here. 
