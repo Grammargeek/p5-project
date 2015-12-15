@@ -218,6 +218,4 @@ function draw(){
 //3
 //2
 //1
-//BOOOOOOOM!
-
-
+//BOOOOOOOM
