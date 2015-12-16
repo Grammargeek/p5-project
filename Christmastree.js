@@ -45,7 +45,11 @@ var hasPresents = false;
 function setup() {
     //creates canvas
     createCanvas(1300, 700);
-    // mySound.setVOlume(0.1);
+    
+    
+//      createCanvas(1300, 700);
+//   background("black");
+// //   mySound.setvolume(0.3);
 
     //sets brown for stump
     // var colors = color('brown');
@@ -312,4 +316,4 @@ function draw() {
 }
 
 //You have reached the end of function draw
-//Make sure that you want to put your code here. 
+//Make sure that you want to put your code here.
