@@ -45,11 +45,9 @@ var hasPresents = false;
 function setup() {
     //creates canvas
     createCanvas(1300, 700);
-    
-    
-//      createCanvas(1300, 700);
-//   background("black");
-// //   mySound.setvolume(0.3);
+
+
+
 
     //sets brown for stump
     // var colors = color('brown');
@@ -116,7 +114,7 @@ function setup() {
     });
     //function for star image
     button7.addEventListener("click", function() {
-         hasStar = true;
+        hasStar = true;
 
 
 
@@ -125,20 +123,20 @@ function setup() {
 
     //used for second star.
     button8.addEventListener("click", function() {
-         hasBlueStar = true;
+        hasBlueStar = true;
 
 
     });
 
     //Used to create the sheep topper.
     button9.addEventListener("click", function() {
-         hasSheep = true;
+        hasSheep = true;
 
     });
 
     //Ornaments
     button10.addEventListener("click", function() {
-         hasOrnaments = true;
+        hasOrnaments = true;
         //  if(hasOrnaments === true){
 
         //     var ornament = loadImage("xmas-ball-ornament.png");
@@ -157,7 +155,7 @@ function setup() {
     });
 
     button11.addEventListener("click", function() {
-         hasOtherOrnaments = true;
+        hasOtherOrnaments = true;
         //     if(hasOtherOrnaments === true){
         //   var ornament = loadImage("sheep.1.png");
         //         imageSprite = createSprite(630, 200);
