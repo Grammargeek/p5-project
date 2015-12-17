@@ -152,10 +152,7 @@ function setup() {
 
 
 
-    //  function preload() {
-    //      mySound = loadSound('assets/doorbell.mp3');
-    //      mySound.play();
-    //  }
+
 
     //You are nearing the end of "function setup".
     //Why are you down so far? 
@@ -285,6 +282,7 @@ function draw() {
         drawSprites();
     }
 
+    //The curly bracket under this line is the end of function draw.
 }
 
 //You have reached the end of function draw
