@@ -45,7 +45,8 @@ var hasPresents = false;
 function setup() {
     //creates canvas
     createCanvas(1300, 700);
-
+    createCanvas(1300, 700);
+    background("black");
 
 
 
@@ -107,14 +108,14 @@ function setup() {
 
     //changes color of the paragraph text.
     button1.addEventListener("click", function() {
-        var newColor = input1.value;
-        theParagraph.style.color = newColor;
+        // var newColor = input1.value;
+        // theParagraph.style.color = newColor;
 
 
     });
     //function for star image
     button7.addEventListener("click", function() {
-        hasStar = true;
+        hasStar = !hasStar;
 
 
 
@@ -123,53 +124,24 @@ function setup() {
 
     //used for second star.
     button8.addEventListener("click", function() {
-        hasBlueStar = true;
+        hasBlueStar = !hasBlueStar;
 
 
     });
 
     //Used to create the sheep topper.
     button9.addEventListener("click", function() {
-        hasSheep = true;
+        hasSheep = !hasSheep;
 
     });
 
     //Ornaments
     button10.addEventListener("click", function() {
-        hasOrnaments = true;
-        //  if(hasOrnaments === true){
-
-        //     var ornament = loadImage("xmas-ball-ornament.png");
-        //     imageSprite = createSprite(630, 200);
-        //      imageSprite.addImage(ornament);
-        //     imageSprite = createSprite(670, 250);
-        //      imageSprite.addImage(ornament);
-        //     imageSprite = createSprite(550, 220);
-        //     imageSprite.addImage(ornament);
-        //     imageSprite = createSprite(750, 320);
-        //     imageSprite.addImage(ornament);
-        //     imageSprite = createSprite(580, 320);
-        //     imageSprite.addImage(ornament);
-        //     drawSprites();
-        // } 
+        hasOrnaments = !hasOrnaments;
     });
 
     button11.addEventListener("click", function() {
         hasOtherOrnaments = true;
-        //     if(hasOtherOrnaments === true){
-        //   var ornament = loadImage("sheep.1.png");
-        //         imageSprite = createSprite(630, 200);
-        //          imageSprite.addImage(ornament);
-        //         imageSprite = createSprite(670, 250);
-        //          imageSprite.addImage(ornament);
-        //         imageSprite = createSprite(550, 220);
-        //         imageSprite.addImage(ornament);
-        //         imageSprite = createSprite(750, 320);
-        //         imageSprite.addImage(ornament);
-        //         imageSprite = createSprite(580, 320);
-        //         imageSprite.addImage(ornament);
-        //         drawSprites();
-        //     }
     });
 
     //presents
@@ -217,15 +189,15 @@ function draw() {
     background(13);
 
     //stump
-    var colors = color('brown');
-    fill(colors);
+    // var colors = color('brown');
+    // fill(colors);
     var stump = rect(615, 360, 70, 70);
     var cc = color(input3.value);
     fill(cc);
     var stump = rect(615, 369, 70, 70);
     //draws tree 
-    var c = color('green');
-    fill(c);
+    // var c = color('green');
+    // fill(c);
     var tri3 = triangle(460, 370, 650, 200, 830, 370);
     var thirdColor = color(input5.value);
     fill(thirdColor);
@@ -247,7 +219,9 @@ function draw() {
     var diffColor = color(input6.value);
     fill(diffColor);
     var topper = ellipse(650, 120, 40, 40);
-
+    //text colors
+    var newColor = input1.value;
+    theParagraph.style.color = newColor;
 
     //yellow star
     if (hasStar === true) {
@@ -297,17 +271,17 @@ function draw() {
     }
     //sheep ornaments
     if (hasOtherOrnaments === true) {
-        var ornament = loadImage("sheep.1.png");
+        var ornament1 = loadImage("sheep.1.png");
         imageSprite = createSprite(630, 200);
-        imageSprite.addImage(ornament);
+        imageSprite.addImage(ornament1);
         imageSprite = createSprite(670, 250);
-        imageSprite.addImage(ornament);
+        imageSprite.addImage(ornament1);
         imageSprite = createSprite(550, 220);
-        imageSprite.addImage(ornament);
+        imageSprite.addImage(ornament1);
         imageSprite = createSprite(750, 320);
-        imageSprite.addImage(ornament);
+        imageSprite.addImage(ornament1);
         imageSprite = createSprite(580, 320);
-        imageSprite.addImage(ornament);
+        imageSprite.addImage(ornament1);
         drawSprites();
     }
 
