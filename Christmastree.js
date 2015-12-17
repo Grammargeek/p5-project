@@ -191,23 +191,23 @@ function draw() {
     var stump = rect(615, 360, 70, 70);
     var cc = color(input3.value);
     fill(cc);
-    var stump = rect(615, 369, 70, 70);
+    stump = rect(615, 369, 70, 70);
     //draws tree 
     // var c = color('green');
     // fill(c);
     var tri3 = triangle(460, 370, 650, 200, 830, 370);
     var thirdColor = color(input5.value);
     fill(thirdColor);
-    var tri3 = triangle(460, 370, 650, 200, 830, 370);
+    tri3 = triangle(460, 370, 650, 200, 830, 370);
     var tri2 = triangle(460, 310, 650, 190, 820, 310);
     var c = color(input2.value);
     fill(c);
-    var tri2 = triangle(460, 310, 650, 190, 820, 310);
+    tri2 = triangle(460, 310, 650, 190, 820, 310);
     var tri = triangle(478, 250, 650, 130, 800, 250);
     var color1 = true;
     var firstColor = color(input4.value);
     fill(firstColor);
-    var tri = triangle(478, 250, 650, 130, 800, 250);
+    tri = triangle(478, 250, 650, 130, 800, 250);
     //draws topper
     var topperColor = color("silver");
     fill(topperColor);
@@ -215,7 +215,7 @@ function draw() {
     var topper = ellipse(650, 120, 40, 40);
     var diffColor = color(input6.value);
     fill(diffColor);
-    var topper = ellipse(650, 120, 40, 40);
+    topper = ellipse(650, 120, 40, 40);
     //text colors
     var newColor = input1.value;
     theParagraph.style.color = newColor;
