@@ -1,4 +1,5 @@
 //Buttons and other vars:
+
 //button 1/input 1 is used for the color of the text
 var button1 = document.getElementById("button1");
 var input1 = document.getElementById("input1");
@@ -22,7 +23,6 @@ var input6 = document.getElementById("input6");
 // var dropdown = document.getElementById("dropdown");
 //this is used for the topper images 
 var hasStar = false;
-
 var button7 = document.getElementById("button7");
 //2nd star
 var button8 = document.getElementById("button8");
@@ -41,7 +41,8 @@ var button12 = document.getElementById("button12");
 var hasPresents = false;
 
 
-
+//function setup starts here.
+//Welcome to function setup.
 function setup() {
     //creates canvas
     createCanvas(1300, 700);
@@ -62,13 +63,7 @@ function setup() {
         // var stump = rect(615, 369, 70, 70);
     });
 
-    //sets color for tree
 
-    // var c = color('green');
-    // fill(c);
-    //   var tri3 = triangle(460, 370, 650, 200, 830, 370);
-    //       var tri2 = triangle(460, 310, 650, 190, 820, 310);
-    // var tri = triangle(478, 250, 650, 130, 800, 250);
 
 
 
@@ -95,11 +90,7 @@ function setup() {
         fill(thirdColor);
         var tri3 = triangle(460, 370, 650, 200, 830, 370);
     });
-    //sets topper color
-    // var topperColor = color("silver");
-    // fill(topperColor);
-    // // //creates topper
-    // var topper = ellipse(650, 120, 40, 40);
+    
     button6.addEventListener("click", function() {
         var diffColor = color(input6.value);
         fill(diffColor);
@@ -108,17 +99,11 @@ function setup() {
 
     //changes color of the paragraph text.
     button1.addEventListener("click", function() {
-        // var newColor = input1.value;
-        // theParagraph.style.color = newColor;
-
-
+        
     });
     //function for star image
     button7.addEventListener("click", function() {
         hasStar = !hasStar;
-
-
-
 
     });
 
@@ -149,11 +134,6 @@ function setup() {
         hasPresents = true;
     });
 
-
-
-
-
-
     //You are nearing the end of "function setup".
     //Why are you down so far? 
     //don't put anything below this line, it won't work.
@@ -173,11 +153,6 @@ function setup() {
 //2
 //1
 //BOOOOOOOM
-
-
-
-
-
 
 
 
